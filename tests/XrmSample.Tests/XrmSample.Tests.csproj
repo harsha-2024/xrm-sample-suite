@@ -1,16 +1,1 @@
-
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net462</TargetFramework>
-    <IsPackable>false</IsPackable>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="xunit" Version="2.4.2" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5" />
-    <PackageReference Include="FakeXrmEasy.v9" Version="3.0.0" />
-    <PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="9.0.2.42" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\XrmSample.Plugins\XrmSample.Plugins.csproj" />
-  </ItemGroup>
-</Project>
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><TargetFramework>net462</TargetFramework></PropertyGroup></Project>

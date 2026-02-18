@@ -1,0 +1,40 @@
+{
+  "customapi": {
+    "uniquename": "new_CalculateDiscount",
+    "name": "new_CalculateDiscount",
+    "displayname": "Calculate Discount",
+    "description": "Returns Discount (Money) = Amount * Rate",
+    "enabled": true,
+    "isfunction": false,
+    "isprivate": false,
+    "bindingtype": 0,
+    "allowedcustomprocessingsteptype": 0
+  },
+  "requestparameters": [
+    {
+      "uniquename": "Amount",
+      "name": "Amount",
+      "displayname": "Amount",
+      "type": 8,
+      "logicalentityname": null,
+      "isoptional": false
+    },
+    {
+      "uniquename": "Rate",
+      "name": "Rate",
+      "displayname": "Rate",
+      "type": 9,
+      "logicalentityname": null,
+      "isoptional": true
+    }
+  ],
+  "responseproperties": [
+    {
+      "uniquename": "Discount",
+      "name": "Discount",
+      "displayname": "Discount",
+      "type": 8,
+      "logicalentityname": null
+    }
+  ]
+}
