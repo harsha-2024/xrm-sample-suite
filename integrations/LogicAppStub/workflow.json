@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {},
+  "triggers": {
+    "manual": {
+      "type": "Request",
+      "kind": "Http",
+      "inputs": {
+        "schema": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "actions": {
+    "Create_in_Dataverse": {
+      "type": "ApiConnection",
+      "inputs": {
+        "host": {
+          "connectionName": "shared_commondataserviceforapps_1",
+          "operationId": "CreateRecord",
+          "apiId": "/subscriptions/{sub}/providers/Microsoft.Web/locations/{loc}/managedApis/commondataserviceforapps"
+        },
+        "parameters": {
+          "entityName": "accounts",
+          "item": {
+            "name": "@triggerBody()?['name']",
+            "emailaddress1": "@triggerBody()?['email']"
+          }
+        }
+      }
+    }
+  },
+  "outputs": {}
+}

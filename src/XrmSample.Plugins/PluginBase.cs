@@ -3,9 +3,6 @@ using Microsoft.Xrm.Sdk;
 
 namespace XrmSample.Plugins
 {
-    /// <summary>
-    /// Minimal base implementing common pattern.
-    /// </summary>
     public abstract class PluginBase : IPlugin
     {
         public void Execute(IServiceProvider serviceProvider)
