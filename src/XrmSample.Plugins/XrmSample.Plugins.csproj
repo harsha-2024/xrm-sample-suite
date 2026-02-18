@@ -1,0 +1,18 @@
+
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <AssemblyName>XrmSample.Plugins</AssemblyName>
+    <RootNamespace>XrmSample.Plugins</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>plugins.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="9.0.2.42" />
+    <PackageReference Include="Microsoft.CrmSdk.Workflow" Version="9.0.2.42" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="plugins.snk" />
+  </ItemGroup>
+</Project>
